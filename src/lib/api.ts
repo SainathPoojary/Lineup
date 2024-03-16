@@ -62,7 +62,7 @@ const joinQueue = async (queueId: string, user: User) => {
       },
       joinedAt: new Date(),
       position: members.length + 1,
-      status: "in-progress",
+      status: "waiting",
     });
 
     await setDoc(doc(db, "queues", queueId), {
@@ -97,6 +97,8 @@ const updateStatus = async (
       }
       return member;
     });
+
+    // update estimated time for per member based on  the joined time
 
     await setDoc(doc(db, "queues", queueId), {
       ...queue,
