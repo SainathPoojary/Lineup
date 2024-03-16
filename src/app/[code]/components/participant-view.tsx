@@ -57,7 +57,7 @@ export default function ParticipantView({ code }: ParticipantViewProps) {
           </h3>
           <p className="text-center text-xl text-gray-500 font-medium">
             {memberData?.memberBefore == 0 ? (
-              <span>It's your turn. </span>
+              <span>It&apos;s your turn. </span>
             ) : (
               <span>
                 There are{" "}

@@ -107,8 +107,8 @@ export default function Home() {
               Say Goodbye to Lines, Optimize with Us
             </h1>
             <p className="text-gray-500 text-lg max-w-xl">
-              Google Meet provides secure, easy-to-use video calls and meetings
-              for everyone
+              Experience seamless waiting with our efficient queue management
+              system, ensuring a smooth and organized process for all.
             </p>
           </div>
           <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5">
